@@ -1,0 +1,18 @@
+[package]
+name = "pyrust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "pyrust"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = "0.17.3"
+pcap = "1"
+pnet = { version="0.31.0", features = ["std", ] }
+
+
+[features]
+extension-module = ["pyo3/extension-module"]
+default = ["extension-module"]

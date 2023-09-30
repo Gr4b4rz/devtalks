@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+maturin = "1.1.0"
+scapy = "*"
+notebook = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "2.7"
